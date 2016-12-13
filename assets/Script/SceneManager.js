@@ -11,6 +11,7 @@ cc.Class({
     onLoad: function () {
         cc.view.enableAntiAlias(false);
         cc.game.addPersistRootNode(this.node);
+        this.loading.startLoading();
     },
 
     // called every frame, uncomment this function to activate update callback

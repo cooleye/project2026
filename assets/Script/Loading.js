@@ -27,10 +27,7 @@ cc.Class({
     },
 
     updateLabel () {
-        let dots = '';
-        for (let i = 0; i < this.dotCount; ++i) {
-            dots += '.';
-        }
+        let dots = '.'.repeat(this.dotCount);
         this.label.string = 'Loading' + dots;
         this.dotCount += 1;
         if (this.dotCount > this.dotMaxCount) {
